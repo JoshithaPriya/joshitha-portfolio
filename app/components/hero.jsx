@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-
+import Link from 'next/link';
 export default function Hero() {
   return (
     <section className="relative w-full h-screen bg-[#080808] overflow-hidden font-display select-none flex justify-center">
@@ -24,6 +24,9 @@ export default function Hero() {
             <span className="hover:text-[#FF4D5E] hover:drop-shadow-[0_0_8px_rgba(255,77,94,0.5)] cursor-pointer transition-all duration-300">Services</span>
             <span className="hover:text-[#FF4D5E] hover:drop-shadow-[0_0_8px_rgba(255,77,94,0.5)] cursor-pointer transition-all duration-300">Portfolio</span>
             <span className="hover:text-[#FF4D5E] hover:drop-shadow-[0_0_8px_rgba(255,77,94,0.5)] cursor-pointer transition-all duration-300">Contact</span>
+            <Link href="/codefolio" className="hover:text-[#FF4D5E] hover:drop-shadow-[0_0_8px_rgba(255,77,94,0.5)] transition-all duration-300">
+  Codefolio
+</Link>
           </div>
           
           {/* Crimson Outline Button */}
